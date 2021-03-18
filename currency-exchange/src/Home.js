@@ -55,7 +55,7 @@ class Home extends Component {
         this.setState({ currencies: currencyAr });
       })
       axios
-      .get('https://financialmodelingprep.com/api/v3/quotes/forex?apikey=992f0505ea9b957539c47ce38e501c6a')
+      .get('https://financialmodelingprep.com/api/v3/quotes/forex?apikey=XXXX')
       .then((response) => { 
         var names =[];
         for (var i=0;i<10;i++){

@@ -28,7 +28,7 @@ class BarGraph extends React.Component {
   componentDidMount = () => {
     axios
       .get(
-        `https://www.alphavantage.co/query?function=FX_MONTHLY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&apikey=787GW6OSVREOIQAA`
+        `https://www.alphavantage.co/query?function=FX_MONTHLY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&apikey=XXXX`
       )
       .then((response) => {
         let close_rates = [];
@@ -87,7 +87,7 @@ class BarGraph extends React.Component {
   convertHandler = () => {
     axios
       .get(
-        `https://www.alphavantage.co/query?function=FX_MONTHLY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&apikey=787GW6OSVREOIQAA`
+        `https://www.alphavantage.co/query?function=FX_MONTHLY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&apikey=XXXX`
       )
       .then((response) => {
         let close_rates = [];

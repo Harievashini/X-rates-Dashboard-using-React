@@ -23,7 +23,7 @@ export default class BarChartComponent extends Component {
     console.log("one year data");
     axios
       .get(
-        `https://www.alphavantage.co/query?function=FX_DAILY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&outputsize=full&apikey=AJ2AZ72QK50T17JO`
+        `https://www.alphavantage.co/query?function=FX_DAILY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&outputsize=full&apikey=XXXX`
       )
       .then((response) => {
         var today = new Date();
@@ -83,7 +83,7 @@ export default class BarChartComponent extends Component {
     console.log("one month data");
     axios
       .get(
-        `https://www.alphavantage.co/query?function=FX_DAILY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&outputsize=full&apikey=X2DRFB6QVEIV9IXL`
+        `https://www.alphavantage.co/query?function=FX_DAILY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&outputsize=full&apikey=XXXX`
       )
       .then((response) => {
         var today = new Date();
@@ -151,7 +151,7 @@ export default class BarChartComponent extends Component {
     console.log("1 week close data");
     axios
       .get(
-        `https://www.alphavantage.co/query?function=FX_DAILY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&apikey=B9ZVAB9VTJOSUOMD`
+        `https://www.alphavantage.co/query?function=FX_DAILY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&apikey=XXXX`
       )
       .then((response) => {
         const data = response.data["Time Series FX (Daily)"];
@@ -196,7 +196,7 @@ export default class BarChartComponent extends Component {
   componentDidMount = () => {
     axios
       .get(
-        `https://www.alphavantage.co/query?function=FX_INTRADAY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&interval=15min&apikey=AJ2AZ72QK50T17JO`
+        `https://www.alphavantage.co/query?function=FX_INTRADAY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&interval=15min&apikey=XXXX`
       )
       .then((response) => {
         var close_rates = [];

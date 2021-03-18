@@ -28,7 +28,7 @@ class OpenChart extends React.Component {
   componentDidMount = () => {
     axios
       .get(
-        `https://www.alphavantage.co/query?function=FX_MONTHLY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&apikey=B9ZVAB9VTJOSUOMD`
+        `https://www.alphavantage.co/query?function=FX_MONTHLY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&apikey=XXXX`
       )
       .then((response) => {
         let open_rates = [];
@@ -87,7 +87,7 @@ class OpenChart extends React.Component {
   convertHandler = () => {
     axios
       .get(
-        `https://www.alphavantage.co/query?function=FX_MONTHLY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&apikey=B9ZVAB9VTJOSUOMD`
+        `https://www.alphavantage.co/query?function=FX_MONTHLY&from_symbol=${this.props.currencyfrom}&to_symbol=${this.props.currencyto}&apikey=XXXX`
       )
       .then((response) => {
         let open_rates = [];
